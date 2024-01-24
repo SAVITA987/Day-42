@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>User Registration</title>
+</head>
+<body>
+    <div id="registration-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter your username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter a valid password" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter a valid email" required>
+
+        <label for="url">URL Link:</label>
+        <input type="url" id="url" placeholder="Enter a valid URL" required>
+
+        <label for="mobile">Mobile:</label>
+        <input type="tel" id="mobile" placeholder="Enter a valid mobile number" required>
+
+        <label for="search">Search:</label>
+        <input type="search" id="search" placeholder="Search something" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" required>
+
+        <label for="time">Date & Time:</label>
+        <input type="time" id="time" required>
+
+        <label for="salary">Choose Your Salary:</label>
+        <input type="range" id="salary" min="0" max="100000" step="1000" required>
+        <output for="salary" id="salaryOutput">0</output>
+
+        <button onclick="validateForm()">Submit</button>
+    </div>
+    <script src="script.js" ></script>
+</body>
+</html>
